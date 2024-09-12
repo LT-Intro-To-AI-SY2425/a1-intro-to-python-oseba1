@@ -184,11 +184,8 @@ def duck_duck_goose(lst: List[str]) -> List[str]:
     """
     counter = 0
     while len(lst) > 2:
-        counter += 1
-        if counter % 3 == 0:
-            if counter > len(lst) - 1:
-                counter -= len(lst)
-            lst.pop(counter)
+        counter = (counter + 2) % len(lst)
+        lst.pop(counter)
 
     return lst
 
