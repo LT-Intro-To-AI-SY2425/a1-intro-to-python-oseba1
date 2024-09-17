@@ -14,10 +14,12 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 
 1. What is your initial thoughts about the python programming language?
 
-
+I like the python language a lot more than other languages. I learnt python first but it is a lot more intuative than other langauges and doesn't have any major gimmicks like other languages. It is also very readable and doesn't have the boilerplate of Java.
 
 2. Describe some similarities and differences that you found between python and other programming languages you have used in the past?
 
-
+Python is similar to JavaScript 
 
 3. What are some things that you learned through this assignment?
+
+I learned more about the enumerate function and I did a lot of stuff with indexing.
