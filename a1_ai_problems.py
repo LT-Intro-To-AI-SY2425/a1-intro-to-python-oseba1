@@ -52,10 +52,30 @@ def reverse_words(s):
 
     lst = s.split()
     lst.reverse()
-    return(str(lst))
+    return(" ".join(lst))
 
 assert reverse_words("the sky is blue") == "blue is sky the"
 
 
+#Problem: Find the Longest Substring with Unique Characters
+#Given a string, write a function that finds the length of the longest substring with all unique characters. 
+#You need to solve it efficiently, and the solution should fit within 10 lines of Python code.
+
+def longest_unique_substring(s: str) -> int:
+    charIndex = {}
+    start = maxLen = 0
+
+    for end, char in enumerate(s):
+        if char in charIndex:
+
+            start = max(start, charIndex[char] + 1)
+
+        charIndex[char] = end
+        maxLen = max(maxLen, end - start + 1)
+
+
+    return maxLen
+
+assert longest_unique_substring("abcdefghijklmnopqraaaa") == 18
 
 print("Tests Passed!")
