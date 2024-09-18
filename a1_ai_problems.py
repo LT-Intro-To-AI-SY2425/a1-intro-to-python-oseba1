@@ -61,7 +61,7 @@ assert reverse_words("the sky is blue") == "blue is sky the"
 #Given a string, write a function that finds the length of the longest substring with all unique characters. 
 #You need to solve it efficiently, and the solution should fit within 10 lines of Python code.
 
-def longest_unique_substring(s: str) -> int:
+def longestUniqueSubstring(s: str) -> int:
     charIndex = {}
     start = maxLen = 0
 
@@ -76,6 +76,6 @@ def longest_unique_substring(s: str) -> int:
 
     return maxLen
 
-assert longest_unique_substring("abcdefghijklmnopqraaaa") == 18
+assert longestUniqueSubstring("abcdefghijklmnopqraaaa") == 18
 
 print("Tests Passed!")
